@@ -56,7 +56,7 @@ namespace :deploy do
 	desc "Set Symlinks for Static Files"
 	task :update_config, :roles => [:app] do
     # sudo "ln -sf #{shared_path}/config/database.yml #{release_path}/config/database.yml"
-		sudo "ln -sf #{shared_path}/uploads #{release_path}/wordpress/wp-content/uploads"
+		sudo "ln -sf #{shared_path}/uploads #{release_path}/wp-content/uploads"
 	end	
 end
 
@@ -101,6 +101,6 @@ namespace :passenger do
   
   desc "Restart Apache"
    task :restart_apache do 
-     run "sudo /etc/init.d/apache2 reload"
+     run "sudo /etc/init.d/httpd restart"
    end
 end

@@ -1,0 +1,93 @@
+/*  
+Skin Name: Brown
+Version: 1.0
+Description: Skin for Responz
+*/
+
+body {
+	background-color: #fefef1;
+}
+
+a {
+	color: #824a14;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #4a3520;
+}
+
+/* form button */
+input[type=reset], input[type=submit] {
+	background-color: #824a14;
+	color: #fff;
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#nav-bar {
+	background-color: #5d4228;
+}
+#header {
+	border-color: #5d4228;
+}
+
+/* SITE LOGO
+================================================ */
+#site-logo a {
+	color: #5d4228;
+}
+
+/* SEARCH FORM
+================================================ */
+#header #searchform #s {
+	background-color: #dfd9d4;
+	border-color: #4a3520;
+}
+
+/************************************************************************************
+PAGE NAV
+*************************************************************************************/
+.pagenav a {
+	background-color: #824a14;
+}
+.pagenav a:hover {
+	background-color: #5d4228;
+}
+
+/************************************************************************************
+POST NAV
+*************************************************************************************/
+.post-nav span span {
+	background-color: #824a14;
+}
+.post-nav a:hover span {
+	background: #5d4228;
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap {
+	background-color: #5d4228;
+}
+#footer {
+	color: #dfd9d4;
+}
+#footer a {
+	color: #fdf9c5;
+}
+
+/* back top */
+.back-top a {
+	background-color: #824a14;
+}
+
+/* footer widget */
+#footer .widget li {
+	border-color: #4a3520;
+}

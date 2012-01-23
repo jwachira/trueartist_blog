@@ -1,0 +1,320 @@
+@media screen and (max-width: 980px) {
+
+	/* set img max-width */
+	img {
+		width: auto\9; /* ie8 */
+		max-width: 100%;
+		height: auto;
+	}
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+	.pagewidth {
+		max-width: 94%;
+	}
+	
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2,
+	.col4-3,
+	.col3-1,
+	.col3-2,
+	.col2-1
+	{
+		margin-left: 2%;
+	}
+	.col4-1 {
+		max-width: 23%;
+	}
+	.col4-2, .col2-1 {
+		max-width: 48%;
+	}
+	.col4-3 {
+		max-width: 72%;
+	}
+	.col3-1 {
+		max-width: 31%;
+	}
+	.col3-2 {
+		max-width: 62%;
+	}
+	
+	/************************************************************************************
+	LAYOUTS
+	*************************************************************************************/
+	/* grid4 */
+	.grid4 .post {
+		width: 23.125%;
+		margin-left: 2.5%;
+	}
+
+	/* grid3 */
+	.grid3 .post {
+		width: 31%;
+		margin-left: 3.5%;
+	}
+
+	/* grid2 */
+	.grid2-thumb .post,
+	.grid2 .post {
+		width: 48%;
+		margin-left: 3.75%;
+	}
+
+}
+
+@media screen and (max-width: 760px) {
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+	/* reset all to fullwidth */
+	#contentwrap,
+	#content,
+	#sidebar-alt, 
+	#sidebar {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	
+	/************************************************************************************
+	HEADER
+	*************************************************************************************/
+	/* reset absolute elements to static */
+	#header .social-widget, #site-logo, #site-description, #main-nav  {
+		position: static !important;
+		float: none;
+		clear: both;
+	}
+	
+	/* header */
+	#header {
+		height: auto;
+	}
+	
+	/* header widget */
+	.header-widget {
+		position: static !important;
+		float: none;
+		text-align: left;
+		clear: both;
+		margin: 0;
+	}
+	.header-widget .widget {
+		margin: 0 0 10px;
+	}
+	
+	/* social widget */
+	#header .social-widget {
+		padding: 5px 0 0;
+	}
+
+	/* search form */
+	#header #searchform {
+		position: absolute;
+		left: inherit;
+		right: 0;
+		width: 150px;
+	}
+	#header #searchform #s {
+		float: right;
+	}
+	#header #searchform input#s:focus {
+		width: 150px;
+	}
+	
+	/* site logo */
+	#site-logo {
+		padding: 15px 100px 10px 0;
+		margin: 0;
+	}
+
+	/* site description */
+	#site-description {
+		margin: 0 0 10px;
+	}
+
+	/************************************************************************************
+	MAIN NAV
+	*************************************************************************************/
+	#main-nav {
+		height: auto;
+		padding: 10px 0 0;
+	}
+	#main-nav a {
+		min-height: 0;
+		padding: 0 10px 8px;
+	}
+	#main-nav a span{
+		display: none;
+	}
+
+	/************************************************************************************
+	FOOTER
+	*************************************************************************************/
+	.footer-nav-wrap,
+	.footer-text {
+		width: 100%;
+		float: none;
+		clear: both;
+		text-align: left;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	
+	/************************************************************************************
+	LAYOUTS
+	*************************************************************************************/
+	/* grid4 */
+	.grid4 .post, .sidebar1 .grid4 .post {
+		width: 100%;
+		margin-left: 0;
+		float: none;
+	}
+
+	/* grid3 */
+	.grid3 .post, .sidebar1 .grid3 .post {
+		width: 100%;
+		margin-left: 0;
+		float: none;
+	}
+	
+}
+
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2, .col2-1,
+	.col4-3,
+	.col3-1,
+	.col3-2	 {
+		margin-left: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/************************************************************************************
+	HEADER
+	*************************************************************************************/
+	/* site logo */
+	#site-logo {
+		font-size: 42px;
+		text-align: left;
+		padding-right: 90px;
+		width: auto;
+	}
+	
+	/* site description */
+	#site-description {
+		text-align: left;
+		margin: 0 0 10px;
+	}
+	
+	/* searchform */
+	#header #searchform {
+		left: inherit;
+		top: 20px;
+		right: 0;
+		width: 150px;
+	}
+	#header #searchform #s {
+		float: right;
+		width: 40px;
+	}
+	
+	/* social widget */
+	.social-widget {
+		position: static !important;
+		float: none;
+		padding: 0;
+	}
+	
+	/* top nav */
+	#top-nav {
+		padding-right: 0;
+	}
+	#top-nav a {
+		font-size: 85%;
+		margin-right: 3px;
+	}
+
+	/************************************************************************************
+	SLIDER
+	*************************************************************************************/
+	.slider {
+		font-size: 90%;
+	}
+
+	/************************************************************************************
+	LAYOUTS
+	*************************************************************************************/
+	/* post */
+	.post {
+		width: 100% !important;
+		margin-left: 0 !important;
+		float: none !important;
+	}
+	
+	/* post title */
+	.post-title {
+		font-size: 2em !important;
+	}
+
+	/************************************************************************************
+	POST NAV
+	*************************************************************************************/
+	.post-nav .prev, .post-nav .next {
+		display: block;
+		width: 100%;
+		clear: both;
+		margin-bottom: 10px;
+	}
+	
+	/************************************************************************************
+	COMMENTS
+	*************************************************************************************/
+	.commentlist {
+		padding-left: 0;
+	}
+	.commentlist .commententry {
+		clear: left;
+	}
+	.commentlist .avatar {
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 0 10px 10px 0;
+	}
+
+	/* commentlist sub-levels */
+	.commentlist ul, .commentlist ol {
+		margin: 0 0 0 7%;
+	}
+
+	/************************************************************************************
+	FOOTER
+	*************************************************************************************/
+	#footer-logo {
+		position: static !important;
+	}
+	.footer-nav {
+		padding: 0;
+	}
+
+}

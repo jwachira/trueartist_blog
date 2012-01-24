@@ -57,6 +57,8 @@ namespace :deploy do
 	task :update_config, :roles => [:app] do
     # sudo "ln -sf #{shared_path}/config/database.yml #{release_path}/config/database.yml"
 		sudo "ln -sf #{shared_path}/uploads #{release_path}/wp-content/uploads"
+		sudo "ln -sf #{shared_path}/themes/uploads/logo #{release_path}/wp-content/themes/responz/uploads/logo"
+		
 	end	
 end
 
